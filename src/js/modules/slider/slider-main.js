@@ -1,11 +1,10 @@
-import Popup from "./popup";
+import Slider from "./slider";
+import Popup from "../popup";
 const popup = new Popup('.modules__info .hanson', 3000, '.modules');
-export default class Slider {
+
+export default class MainSlider extends Slider {
     constructor(page, btns) {
-        this.page = document.querySelector(page);
-        this.slides = this.page.children;
-        this.btns = document.querySelectorAll(btns);
-        this.slideIndex = 1;
+        super(page, btns);
     }
 
     showSlides(n) {
