@@ -3,8 +3,8 @@ import Popup from "../popup";
 const popup = new Popup('.modules__info .hanson', 3000, '.modules');
 
 export default class MainSlider extends Slider {
-    constructor(page, btns) {
-        super(page, btns);
+    constructor(btns) {
+        super(btns);
     }
 
     showSlides(n) {
